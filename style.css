@@ -1,0 +1,108 @@
+ @charset "UTF-8";
+
+ @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sriracha&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+ :root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Fredericka the Great', cursive;
+    --font3: 'Sriracha', cursive;
+ }
+
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ html, body {
+    min-height: 100%;
+    background-color: darkgrey;
+    font-family: var(--font1);
+ }
+
+ header {
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 6vw;
+ }
+
+ header > p {
+    padding-bottom: 50px;
+
+ }
+
+ a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.25s;
+ }
+
+ a:hover {
+    background-color: rgba(65, 62, 62, 0.637);
+    border-radius: 5px;
+    text-decoration: underline;  
+    
+ }
+
+ section {
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+
+ }
+
+ section > p {
+    padding-bottom: 2em;
+ }
+
+ section.normal {
+    background-color: white;
+    color: black;
+ }
+
+ section.imagem {
+    background-color: rgb(53, 48, 48);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.486);
+    background-size: cover;
+    background-attachment: fixed;
+ }
+
+ section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.479);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px black;
+    
+ }
+
+
+ section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+ }
+
+ section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+ footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+ }
